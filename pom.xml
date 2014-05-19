@@ -74,6 +74,11 @@
             <artifactId>org.apache.felix.fileinstall</artifactId>
             <version>3.2.6</version>
         </dependency>
+        <dependency>	
+  			<groupId>me.moocar.logback-gelf</groupId>
+  			<artifactId>me.moocar.logback-gelf</artifactId>
+      		<version>0.0.1-SNAPSHOT</version>
+      </dependency>
     </dependencies>
     
     <build>
@@ -212,6 +217,8 @@
                         <encoding>UTF-8</encoding>
                         <source>1.6</source>
                         <target>1.6</target>
+                        <compilerArgument>-err:-forbidden</compilerArgument>
+
                     </configuration>
                 </plugin>
                 <plugin>
@@ -283,6 +290,10 @@
         <pluginRepository>
             <id>tycho-snapshots</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
+        </pluginRepository>
+        <pluginRepository>
+        	<id>eclipserepo</id>
+        	<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20110523182458/repository/</url>
         </pluginRepository>
     </pluginRepositories>
     

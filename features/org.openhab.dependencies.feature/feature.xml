@@ -24,7 +24,7 @@ runtime and the openHAB designer rely on.
       Copyright (c) 2010-2014, openHAB.org &lt;admin@openhab.org&gt;
    </copyright>
 
-  <license url="%licenseURL">
+   <license url="%licenseURL">
       %license
    </license>
 
@@ -330,6 +330,13 @@ runtime and the openHAB designer rely on.
 
    <plugin
          id="org.apache.commons.exec"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="me.moocar.logback-gelf"
          download-size="0"
          install-size="0"
          version="0.0.0"

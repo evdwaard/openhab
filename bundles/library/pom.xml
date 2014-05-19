@@ -17,6 +17,7 @@
 
   <modules>
     <module>org.openhab.library.tel</module>
+    <module>me.moocar.logback-gelf</module>
   </modules>
 
 </project>

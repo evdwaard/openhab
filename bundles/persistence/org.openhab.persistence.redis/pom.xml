@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<parent>
+		<groupId>org.openhab.bundles</groupId>
+		<artifactId>persistence</artifactId>
+		<version>1.5.0-SNAPSHOT</version>
+	</parent>
+
+	<name>openHAB redis Persistence</name>
+
+	<properties>
+		<bundle.symbolicName>org.openhab.persistence.redis</bundle.symbolicName>
+		<bundle.namespace>org.openhab.persistence.redis</bundle.namespace>
+		<deb.name>openhab-addon-persistence-redis</deb.name>
+		<deb.description>${name}</deb.description>
+	</properties>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.openhab.persistence</groupId>
+	<artifactId>org.openhab.persistence.redis</artifactId>
+
+	<packaging>eclipse-plugin</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.vafer</groupId>
+				<artifactId>jdeb</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<dependencies>
+		<dependency>
+		    <groupId>redis.clients</groupId>
+		    <artifactId>jedis</artifactId>
+		    <version>2.4.2</version>
+		    <type>jar</type>
+		    <scope>compile</scope>
+		</dependency>
+	</dependencies>
+</project>
