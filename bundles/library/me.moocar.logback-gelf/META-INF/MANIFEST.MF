@@ -3,6 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Logback-gelf
 Bundle-SymbolicName: me.moocar.logback-gelf
 Bundle-Version: 1.0.0
+Fragment-Host: ch.qos.logback.classic
 Import-Package: com.google.gson,
  ch.qos.logback.classic,
  ch.qos.logback.classic.encoder,
@@ -17,6 +18,7 @@ Import-Package: com.google.gson,
  org.osgi.framework,
  org.osgi.service.cm,
  org.slf4j
-Export-Package: me.moocar.logbackgelf,
+Export-Package: me.moocar.logbackgelf;uses:="ch.qos.logback.core,ch.qos.logback.classic.spi",
  me.moocar.logbackgelf.util
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
